@@ -7,17 +7,13 @@ sudo sysctl net.ipv4.conf.all.forwarding=1
 sudo iptables -P FORWARD ACCEPT
 
 
-#Servidor dns padrao do google
-echo "nameserver 8.8.8.8" >> /etc/resolf.conf
-
 #Adicionando  os hosts de dns no  /etc/resolv.conf
 
 
 echo "#Servidores de DSN da petrobra" >> /etc/resolv.conf
 echo "nameserver 10.10.10.10" >>  /etc/resolv.conf
 echo "nameserver 10.20.20.20" >>  /etc/resolv.conf
-echo "nameserver 333.333.333.3" >>  /etc/resolv.conf
-echo "nameserver 444.444.444.4" >> /etc/resolv.conf
+echo "nameserver 8.8.8.8" >> /etc/resolf.conf
 echo "search petrobras.biz" >> /etc/resolv.conf
 echo "search petrobras.com.br" >> /etc/resolv.conf
 
