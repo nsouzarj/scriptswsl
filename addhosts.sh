@@ -3,8 +3,8 @@
 
 #Acessando a rede pra fora
 
-sudo sysctl net.ipv4.conf.all.forwarding=1
-sudo iptables -P FORWARD ACCEPT
+#sudo sysctl net.ipv4.conf.all.forwarding=1
+#sudo iptables -P FORWARD ACCEPT
 
 
 #Adicionando  os hosts de dns no  /etc/resolv.conf
